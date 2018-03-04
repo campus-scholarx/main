@@ -11,7 +11,7 @@
 <script type="text/javascript">
 var keeperaltpage = "denied.html";
 function keeperCheck(){
-   keeperpass = window.document.keeper.page.value;
+   keeperpass = window.document.keeper.campuscode.value;
    keeperframe.location.href = keeperpass + "2.html";
    timer = setTimeout("keeperTest(keeperpass)",2000); }
 function keeperTest(pass){
@@ -19,14 +19,14 @@ function keeperTest(pass){
    { location.href = pass + ".html"; }
    else { location.href = keeperaltpage; } }
 </script>
-<section class="hero is-info is-large">
+<section class="hero is-info is-fullheight">
   <div class="hero-body">
-    <div class="container">
+    <div class="container has-text-centered">
 <form name="keeper" action="javascript:keeperCheck();"
  style="margin:0;">
 <div style="display:inline;">
-<input type="text" name="page">
-<input type="submit" value="Go">
+<input class="input is-primary" type="text" placeholder="XXXX" name="campuscode">
+</br><input type="submit" value="Access My ScholarX Campus">
 <iframe src="" name="keeperframe" frameborder="0"
  style="width:0px;height:0px;"></iframe>
 <noscript><div style="display:inline;color:#ff0000;
