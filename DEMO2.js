@@ -1,0 +1,1 @@
+var keeperpasscheck = 1;
